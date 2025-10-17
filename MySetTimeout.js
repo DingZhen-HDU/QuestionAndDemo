@@ -36,4 +36,4 @@ function add(a, b) {
 }
 
 mySetTimeout(() => add(1, 2), 1000);
-myClearTimeout(1);
+// myClearTimeout(1);
