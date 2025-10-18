@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LVHA</title>
+</head>
+<style>
+    /* 伪类顺序错误，访问后hover会失效 */
+    .old:active {
+        color: orange;
+    }
+
+    .old:hover {
+        color: red;
+    }
+
+    .old:link {
+        color: blue;
+    }
+
+    .old:visited {
+        color: yellow;
+    }
+
+    /* LVHA */
+    .new:link {
+        color: blue;
+    }
+
+    .new:visited {
+        color: yellow;
+    }
+
+    .new:hover {
+        color: red;
+    }
+
+    .new:active {
+        color: orange;
+    }
+</style>
+
+<body>
+    <a class="old" href="https://www.baidu.com">www.baidu.com</a>
+    <a class="new" href="https://www.baidu.com">www.baidu.com</a>
+</body>
+
+</html>
